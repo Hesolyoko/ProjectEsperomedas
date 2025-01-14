@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dse0kbk2tj8re"]
+
+[ext_resource type="Texture2D" uid="uid://dda5js4demk65" path="res://icon.svg" id="1_ewr1c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vd1he"]
+size = Vector2(1162, 35)
+
+[node name="World" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Layer1" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(576, 324)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Layer1"]
+position = Vector2(-3.05176e-05, -4.88758e-06)
+scale = Vector2(9, 5.0625)
+texture = ExtResource("1_ewr1c")
+
+[node name="Ground" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2(576, 630.5)
+shape = SubResource("RectangleShape2D_vd1he")

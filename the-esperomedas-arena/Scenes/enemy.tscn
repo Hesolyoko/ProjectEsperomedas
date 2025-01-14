@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://c544ltlw1330m"]
+
+[ext_resource type="Texture2D" uid="uid://dda5js4demk65" path="res://icon.svg" id="1_xtm07"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bmh2j"]
+radius = 30.0
+height = 126.0
+
+[node name="Enemy" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(576, 324)
+shape = SubResource("CapsuleShape2D_bmh2j")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+texture = ExtResource("1_xtm07")
+
+[node name="HPBar" type="CanvasLayer" parent="."]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="HPBar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 694.0
+offset_top = 27.0
+offset_right = -39.0
+offset_bottom = -595.0
+grow_horizontal = 2
+grow_vertical = 2
+fill_mode = 1
+texture_under = ExtResource("1_xtm07")
+metadata/_edit_use_anchors_ = true
+
+[node name="EnergyBar" type="CanvasLayer" parent="."]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="EnergyBar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 729.0
+offset_top = 66.0
+offset_right = -40.0
+offset_bottom = -567.0
+grow_horizontal = 2
+grow_vertical = 2
+fill_mode = 1
+texture_under = ExtResource("1_xtm07")
+metadata/_edit_use_anchors_ = true

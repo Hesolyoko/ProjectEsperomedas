@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://ck6lymw77dws0"]
+
+[ext_resource type="PackedScene" uid="uid://b8y3xiw5kh41g" path="res://Scenes/player.tscn" id="1_ap0ts"]
+[ext_resource type="PackedScene" uid="uid://dse0kbk2tj8re" path="res://Scenes/world.tscn" id="2_6k7gs"]
+[ext_resource type="Texture2D" uid="uid://dda5js4demk65" path="res://icon.svg" id="3_xt1vl"]
+[ext_resource type="PackedScene" uid="uid://c544ltlw1330m" path="res://Scenes/enemy.tscn" id="4_uwb0s"]
+
+[node name="Main" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_ap0ts")]
+
+[node name="World" parent="." instance=ExtResource("2_6k7gs")]
+
+[node name="HPBar" type="CanvasLayer" parent="."]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="HPBar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 29.0
+offset_top = 27.0
+offset_right = -704.0
+offset_bottom = -595.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_under = ExtResource("3_xt1vl")
+metadata/_edit_use_anchors_ = true
+
+[node name="EnergyBar" type="CanvasLayer" parent="."]
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="EnergyBar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 29.0
+offset_top = 53.0
+offset_right = -740.0
+offset_bottom = -580.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_under = ExtResource("3_xt1vl")
+
+[node name="Enemy" parent="." instance=ExtResource("4_uwb0s")]
