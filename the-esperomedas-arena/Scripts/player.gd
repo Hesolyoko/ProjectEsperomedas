@@ -26,5 +26,5 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_just_pressed("secret"):
 			print_rich("You found the secret!")
 			input_pressed = false
-
+			
 	move_and_slide()

@@ -10,7 +10,8 @@ size = Vector2(1162, 35)
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="Layer1" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(576, 324)
+position = Vector2(5098, 2929)
+scale = Vector2(8.84, 9.04)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Layer1"]
 position = Vector2(-3.05176e-05, -4.88758e-06)

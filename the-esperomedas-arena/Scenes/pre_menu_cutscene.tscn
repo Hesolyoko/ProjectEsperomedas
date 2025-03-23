@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bh1qihoxifc5b"]
 
-[ext_resource type="VideoStream" path="res://SplashScreen/HesySplashVideo.ogv" id="1_msxfc"]
-[ext_resource type="Script" path="res://Scripts/to_main_menu.gd" id="2_ifali"]
+[ext_resource type="VideoStream" uid="uid://cikoydhjtbao7" path="res://SplashScreen/HesySplashVideo.ogv" id="1_msxfc"]
+[ext_resource type="Script" uid="uid://t8ey4dnvgjvt" path="res://Scripts/to_main_menu.gd" id="2_ifali"]
 
 [node name="PreMenuCutscene" type="Control"]
 layout_mode = 3

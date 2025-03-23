@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b0vv6a3kwhq3g"]
 
-[ext_resource type="VideoStream" path="res://SplashScreen/HesySplashGame.ogv" id="1_sljno"]
-[ext_resource type="Script" path="res://Scripts/splash_screen.gd" id="2_3252g"]
+[ext_resource type="VideoStream" uid="uid://d54tixruhvpu" path="res://SplashScreen/HesySplashGame.ogv" id="1_sljno"]
+[ext_resource type="Script" uid="uid://cewah2sfhmc52" path="res://Scripts/splash_screen.gd" id="2_3252g"]
 
 [node name="HesolyokoSplashScreen" type="Control"]
 layout_mode = 3
